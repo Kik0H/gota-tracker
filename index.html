@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gota Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Welcome to Gota Tracker</h1>
+    <p>Selecionar o bêbado a registar:</p>
+    <div class="botoes1">
+        <button class="botao_pessoa" data-nome="Rocha">Rocha</button>
+        <button class="botao_pessoa" data-nome="Quinze">Quinze</button>
+        <button class="botao_pessoa" data-nome="Kiko">Kiko</button>
+        <button class="botao_pessoa" data-nome="Pedro">Pedro</button>
+        <button class="botao_pessoa" data-nome="Brandão">Brandão</button>
+        <button class="botao_pessoa" data-nome="Preto">Preto</button>
+        <button class="botao_pessoa" data-nome="Tomás">Tomás</button>
+    </div>
+
+    <p>Selecionado: <span id="selecionado">Nenhum</span></p>
+
+    <div class="botoes2">
+        <button class="botao_produto" data-nome="Fino" data-preco="1.20">Fino - 1.20€</button>
+        <button class="botao_produto" data-nome="Lanche/Croissant" data-preco="1.00">Lanche/Croissant - 1€</button>
+        <button class="botao_produto" data-nome="Café" data-preco="0.90">Café - 0.90€</button>
+        <button class="botao_produto" data-nome="Pedras Limão" data-preco="1.50">Pedras Limão - 1.50€</button>
+        <button class="botao_produto" data-nome="Pedras Normal" data-preco="1.50">Pedras Normal - 1.50€</button>
+        <button class="botao_produto" data-nome="Água" data-preco="0.00">Água - nao sei</button>
+    </div>
+
+    <div class="carrinho">
+        <h2>Carrinho</h2>
+        <ul id="lista-carrinho"></ul>
+        <p>Total: <span id="total-carrinho">0.00€</span></p>
+        <button class="btn-finalizar" id="btn-finalizar">Finalizar</button>
+    </div>
+
+
+    <p class="total-geral">Total Gasto por Todos: <span id="total-geral">0.00€</span></p>
+
+    <div class="leaderboard">
+        <h2>Leaderboard</h2>
+        <ul id="lista-leaderboard"></ul>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
